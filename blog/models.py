@@ -9,10 +9,12 @@ class Post(models.Model):
 	cos=models.TextField()
 	data_crea=models.DateField()
 	data_pub=models.DateField()
+	def __unicode__(self):
+		return self.cos
 	
 class Link(models.Model):
 	post=models.ForeignKey("Post")
-	url=models.TextField()
+	url=models.URLField()
 	nom=models.TextField()
 	
 		
