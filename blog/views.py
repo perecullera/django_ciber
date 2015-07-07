@@ -6,3 +6,6 @@ from django.template import RequestContext
 
 from blog import models
 
+def index(request):
+    return HttpResponse("Hello, world. You're at the poll index.")
+
