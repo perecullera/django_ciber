@@ -1,12 +1,14 @@
 
 {%include "base.html"%}
+{%include "sidebar.html"%}
+<div class="col-xs-12 col-sm-9">
 {% if latest_post_list %}
     <ul>
     {% for post in latest_post_list %}
-        <li><a href="/post/{{ post.id }}/">{{ post.title}}</a></li>
+        <li><a href="/blog/{{ post.id }}/">{{ post.title}}</a></li>
     {% endfor %}
     </ul>
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
-
+</div>
