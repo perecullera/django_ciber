@@ -9,6 +9,7 @@ class Post(models.Model):
 	cos=models.TextField()
 	data_crea=models.DateField()
 	data_pub=models.DateField()
+	visits = models.IntegerField()
 	def __unicode__(self):
 		return self.cos
 	
